@@ -64,7 +64,7 @@
 
   <script>
     
-    let target_datetime = new Date("2025-11-14T22:36:00Z");
+    let target_datetime = new Date("2025-11-28T22:00:00Z");
     console.log("Target datetime is: " + target_datetime.toString());
 
     function check_time() {
@@ -75,9 +75,9 @@
             console.log("Redirecting...");
             setTimeout(() => {
             window.location.replace("https://youtube.com/live/zgUCxIw5R8k?feature=share");
-            }, 20000);
+            }, 5000);
         } else {
-            console.log("will trigger check again in 10 seconds");
+            // console.log("will trigger check again in 10 seconds");
             setTimeout(check_time, 10000);
         }
     }
