@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Meghna & Harsh</title>
-    <meta http-equiv="refresh" content="0; url=https://www.youtube.com">   -->
+    <meta http-equiv="refresh" content="0; url=https://youtube.com/live/zgUCxIw5R8k?feature=share">   -->
     <!-- add wedding stream link above when ready -->
 <!-- </head>
 <body>
@@ -17,6 +17,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stream Countdown</title>
@@ -60,7 +61,39 @@
     footer{margin-top:14px;font-size:12px;opacity:0.8}
     @media (max-width:420px){.countdown{flex-wrap:wrap}.segment{min-width:60px;padding:10px 8px}}
   </style>
+
+  <script>
+    
+    let target_datetime = new Date("2025-11-14T22:36:00Z");
+    console.log("Target datetime is: " + target_datetime.toString());
+
+    function check_time() {
+        console.log("Checking time...");
+        let current_datetime = new Date();
+
+        if (current_datetime >= target_datetime) {
+            console.log("Redirecting...");
+            setTimeout(() => {
+            window.location.replace("https://youtube.com/live/zgUCxIw5R8k?feature=share");
+            }, 20000);
+        } else {
+            console.log("will trigger check again in 10 seconds");
+            setTimeout(check_time, 10000);
+        }
+    }
+
+    check_time();
+    console.log("Waiting...");
+    
+  </script>
+
+
+
+
 </head>
+
+
+
 <body>
   <div class="card" role="region" aria-label="Stream countdown">
     <h1>We love the enthusiasm</h1>
