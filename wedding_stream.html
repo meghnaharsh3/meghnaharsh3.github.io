@@ -64,7 +64,7 @@
 
   <script>
     
-    let target_datetime = new Date("2025-11-28T22:00:00Z");
+    let target_datetime = new Date("2025-11-28T22:20:00Z");
     console.log("Target datetime is: " + target_datetime.toString());
 
     function check_time() {
@@ -97,7 +97,7 @@
 <body>
   <div class="card" role="region" aria-label="Stream countdown">
     <h1>We love the enthusiasm</h1>
-    <p class="lead">The stream begins at <strong>4:00 PM Central Time</strong> on <strong>November 28, 2025</strong>.</p>
+    <p class="lead">The stream begins at <strong>4:20 PM Central Time</strong> on <strong>November 28, 2025</strong>.</p>
     <div class="target" id="targetString" aria-live="polite"></div>
 
     <div class="countdown" id="countdown" aria-live="polite">
@@ -111,7 +111,7 @@
   </div>
 
   <script>
-    const targetUtc = Date.parse("2025-11-28T22:00:00Z");
+    const targetUtc = Date.parse("2025-11-28T22:20:00Z");
 
     const targetStringEl = document.getElementById('targetString');
     targetStringEl.textContent = 'That is ' + new Date(targetUtc).toLocaleString(undefined, {weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'numeric', minute:'2-digit', second:'2-digit', timeZoneName:'short'}) + ' (your local time).';
